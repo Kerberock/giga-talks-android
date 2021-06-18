@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">first application</string>
+    <string name="name">Ingresa tu nombre</string>
+    <string name="email">Ingresa tu email</string>
+</resources>
