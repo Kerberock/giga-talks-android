@@ -3,6 +3,7 @@ package com.giga.firstapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,11 +19,31 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    // método para mandar a llamar a la próxima Activity
+    // método para mandar a llamar a la próxima Activity (llamada explícita) [Intent]
     public void lanzar(View v){
         Intent i = new Intent(this, SecondActivity.class);
         startActivityForResult(i, requestCode);
     }
+
+    // llamada implícita [Intent]
+    // Toda llamada implícita lleva un action y una data
+    // action para decir qué es lo que va a hacer y el data es para entender qué necesita para hacerlo
+    public void abrirWeb(View v){
+        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://grupo-giga.com/"));
+        startActivity(i);
+    }
+
+    public void localizar(View v){
+        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:19.200852181164866,-96.2357457174807"));
+        startActivity(i);
+    }
+
+    public void marcar(View v){
+        Intent i = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:+522281231234"));
+        startActivity(i);
+    }
+
+    // lamadas implícitas
 
     // esto nos va a cachar la respuesta de la segunda actividad
     @Override

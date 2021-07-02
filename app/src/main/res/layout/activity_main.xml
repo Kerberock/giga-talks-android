@@ -16,4 +16,22 @@
         android:text="IR AL REGISTRO"
         android:onClick="lanzar" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desplegar URL"
+        android:onClick="abrirWeb" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abrir localización"
+        android:onClick="localizar" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marcar con teléfono"
+        android:onClick="marcar" />
+
 </LinearLayout>
