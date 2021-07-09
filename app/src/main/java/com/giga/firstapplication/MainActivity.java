@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void localizar(View v){
-        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:19.200852181164866,-96.2357457174807"));
+        Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:19.168715896865976, -96.22714154508199?q=auto giga"));
         startActivity(i);
     }
 
