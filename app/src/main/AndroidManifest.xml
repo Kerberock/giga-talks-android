@@ -18,6 +18,7 @@
         </activity>
         <!-- Agrego nueva Activity -->
         <activity android:name=".SecondActivity" />
+        <activity android:name=".Notification_Giga" />
     </application>
 
 </manifest>

@@ -52,4 +52,17 @@
         android:text="Marcar con teléfono"
         android:onClick="marcar" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Notificación" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanzar notificación"
+        android:onClick="lanzar_notificacion" />
+
 </LinearLayout>
